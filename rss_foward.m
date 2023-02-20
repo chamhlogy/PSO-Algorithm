@@ -14,9 +14,9 @@ for i=1:N
     S(:,:,i)=[eye(2) -s(:,i); -s(:,i).' s(:,i).'*s(:,i)];
 end
 
-% CRB²ÎÊýÅäÖÃ
+% CRBï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 % alpha1=10*alpha/(sigma*log(10));
-Q_gauss=0*sigma^2*ones(N)+1*1*sigma^2*eye(N);  % ÎÞÏà¹ØÐÔµÄÍÆµ¼¹ý³Ì   
+Q_gauss=0*sigma^2*ones(N)+1*1*sigma^2*eye(N);  % ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½  .. 
 n_gauss=gauss_samples(zeros(N,1),Q_gauss,1);
 L=zeros(N,1);
 
